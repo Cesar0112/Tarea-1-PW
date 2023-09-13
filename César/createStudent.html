@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear estudiante</title>
+  </head>
+  <body>
+    <form action="methods.js" method="post">
+      <table border="1">
+        <caption>
+          Introduzca los datos del estudiante en el siguiente formulario:
+        </caption>
+        <tr>
+          <th colspan="2">Datos del estudiante</th>
+        </tr>
+        <tr>
+          <td><label for="nombre">Nombre:</label></td>
+          <td><input type="text" name="input_nombre" id="nombre" /></td>
+        </tr>
+        <tr>
+          <td><label for="apellidos">Apellidos:</label></td>
+          <td><input id="apellidos" type="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="sexo">Sexo:</label>
+          </td>
+          <td>
+            <select name="combo_sexo" id="sexo">
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="combo_municipio" id="">Municipio</label></td>
+          <td>
+            <select name="" id="combo_municipio">
+              <option value="Boyeros">Boyeros</option>
+              <option value="La Lisa">La Lisa</option>
+              <option value="Alamar">Alamar</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+            <td><label for="combo_grupo">Grupo</label></td>
+            <td>
+                <select name="" id="combo_grupo">
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
