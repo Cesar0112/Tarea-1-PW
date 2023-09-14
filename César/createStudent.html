@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crear estudiante</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <form action="methods.js" method="post">
-      <table border="1">
+      <table>
         <caption>
-          Introduzca los datos del estudiante en el siguiente formulario:
+          Formulario del estudiante:
         </caption>
         <tr>
           <th colspan="2">Datos del estudiante</th>
@@ -34,7 +35,7 @@
           </td>
         </tr>
         <tr>
-          <td><label for="combo_municipio" id="">Municipio</label></td>
+          <td><label for="combo_municipio" id="">Municipio:</label></td>
           <td>
             <select name="" id="combo_municipio">
               <option value="Boyeros">Boyeros</option>
@@ -44,14 +45,18 @@
           </td>
         </tr>
         <tr>
-            <td><label for="combo_grupo">Grupo</label></td>
-            <td>
-                <select name="" id="combo_grupo">
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                </select>
-            </td>
+          <td><label for="combo_grupo">Grupo:</label></td>
+          <td>
+            <select name="" id="combo_grupo">
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Enviar" /></td>
+          <td><input type="reset" value="Limpiar" /></td>
         </tr>
       </table>
     </form>

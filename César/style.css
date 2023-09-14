@@ -1,0 +1,23 @@
+table td:first-child {
+    text-align: right;
+}
+
+table tr:first-child {
+    border: solid blue 2px;
+}
+
+table {
+    border: solid blue 2px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    margin: 5px;
+    padding: 5px;
+}
+
+table tr:last-child td input:hover {
+    border: rgb(0, 102, 255) solid 2px !important;
+    border-radius: 5px;
+}
