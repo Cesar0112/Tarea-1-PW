@@ -1,0 +1,35 @@
+* {
+    margin:2px;
+    padding:2px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: arial;
+  }
+table {
+    border-collapse: collapse;
+}
+th {
+  background-color: #ccc;
+  font-weight: bold;
+  font-size:16px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.botones input[type="submit"] {
+  padding: 5px 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.botones input[type="submit"]:hover {
+  background-color: grey;
+}

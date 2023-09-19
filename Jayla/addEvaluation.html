@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar evaluacion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="logic.js" method="POST">
+        <table>
+            <tr>
+                <th colspan="6">Insertar Evaluacion:</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="asignatura">Asignatura:</label>
+                </td>
+                <td>
+                    <select name="selectSubject" id="asignatura">
+                        <option value=""> </option>
+                        <option value="indication">Seleccione una asignatura </option>
+                        <option value="m1">Matematica 1</option>
+                        <option value="m2">Matematica 2</option>
+                        <option value="m3">Matematica 3</option>
+                        <option value="m4">Matematica 4</option>
+                        <option value="historia">Historia de Cuba</option>
+                        <option value="cp">Cultura Politica</option>
+                        <option value="ii">Introduccion a la Informatica</option>
+                        <option value="ed">Estructura de datos</option>
+                        <option value="tp">Teoria Politica</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="estudiante">Estudiante:</label>
+                </td>
+                <td>
+                    <select name="selectSubject" id="asignatura">
+                        <option value="blank"> </option>
+                        <option value="indication">Seleccione un estudiante </option>
+                        <option value="a1">Frank Perez Roque</option>
+                        <option value="a22">Sheyla Torres Rodriguez</option>
+                        <option value="a3">Miguel Thompson Hernandez</option>
+                        <option value="a4">Jose Luis Perez Perez</option>
+                        <option value="a5">Laura Rodriguez Davis</option>
+                        <option value="a6">Carlos Vazquez Benitez</option>
+                        <option value="a7">Susana del Toro Sanchez</option>
+                        <option value="a8">Pablo Ramirez Tabares</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nota">Nota:</label>
+                </td>
+                <td>
+                    <input type="number" name="nota" min="2" max="5" ></input>
+                </td>
+            </tr>
+           
+        </table>
+        <div class="botones">
+            <input type="submit" value="Registrar" class="submit-btn"/>
+            <input type="submit" value="Cancelar" class="submit-btn"/>
+        </div>
+    </form>
+</body>
+</html>
