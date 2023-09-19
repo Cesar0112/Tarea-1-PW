@@ -3,13 +3,17 @@ table td:first-child {
 }
 
 table tr:first-child {
-    border: solid blue 2px;
+    border: solid black 2px;
+    height: 30px;
+    background-color: rgb(0, 153, 153);
+    color: white;
 }
 
 table {
-    border: solid blue 2px;
+    border: solid black 2px;
     border-collapse: collapse;
     margin: auto;
+    width: 300px;
 }
 
 td {
@@ -17,7 +21,22 @@ td {
     padding: 5px;
 }
 
-table tr:last-child td input:hover {
-    border: rgb(0, 102, 255) solid 2px !important;
+table tr:last-child td input {
+    background-color: rgb(0, 153, 153);
     border-radius: 5px;
+    border: solid rgb(0, 153, 153) 2px;
+
+}
+
+
+table tr:last-child td input:hover {
+    background-color: rgb(4, 123, 123);
+    border-color: rgb(4, 123, 123);
+}
+
+#nombre,
+#apellidos {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
 }

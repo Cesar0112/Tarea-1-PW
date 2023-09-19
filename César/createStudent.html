@@ -4,24 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crear estudiante</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="manipulateDOM.js"></script>
   </head>
   <body>
-    <form action="methods.js" method="post">
+    <form action="#" method="post" id="formulario">
       <table>
-        <caption>
-          Formulario del estudiante:
-        </caption>
         <tr>
           <th colspan="2">Datos del estudiante</th>
         </tr>
         <tr>
           <td><label for="nombre">Nombre:</label></td>
-          <td><input type="text" name="input_nombre" id="nombre" /></td>
+          <td>
+            <input required type="text" onkeyup="validacionNombreApellido()"  name="input_nombre" id="nombre" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="hidden" value="cesarfernandezgarcia349@gmail.com" />
+          </td>
         </tr>
         <tr>
           <td><label for="apellidos">Apellidos:</label></td>
-          <td><input id="apellidos" type="text" /></td>
+          <td><input required id="apellidos" type="text" onkeyup="validacionNombreApellido()" /></td>
         </tr>
         <tr>
           <td>

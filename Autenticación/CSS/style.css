@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../Mis_Iconos/Profe_Clases.jpg') no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    width: 200px;
+    height: 237px;
+    background-color: rgb(0, 153, 153);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 70px 30px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    /*para que este fuera del recuadro la mitad*/
+    left: calc(50% - 50px);
+    /*para centrarlo*/
+    background-color: rgb(0, 153, 153);
+}
+
+a {
+    display: block;
+    color: white;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    font-size: 85%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    /*Para q este en una sola linea*/
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type='password'],
+input[type='text'] {
+    border: none;
+    border-bottom: solid white 1px;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+input[type='password']:focus,
+input[type='text']:focus {
+    height: 100%;
+}
+
+input[type='submit'] {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 102%;
+}
+
+input[type='submit']:hover {
+    cursor: pointer;
+}
