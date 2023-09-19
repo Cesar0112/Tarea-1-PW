@@ -10,3 +10,5 @@ Tarea número 1 de PW, es sencilla no hay nada complicado
     3. .js
 3. Lo revisas bien
 4. Haces el pull request
+## Como se aprueba el pull request
+1. Yo lo apruebo 😂
