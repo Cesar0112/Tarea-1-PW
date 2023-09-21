@@ -1,0 +1,35 @@
+* {
+    margin:3px;
+    padding:3px;
+}
+table tr:first-child {
+    color: white;
+    border: solid rgb(0, 10, 30) 2px;
+    height: 26px;
+    background-color: rgba(96, 138, 227, 0.916);
+    
+}
+table td:first-child {
+    text-align: right;
+}
+
+table {
+    border: solid rgb(0, 10, 30) 2px;
+    border-collapse: collapse;
+    width: 300px;
+}
+td {
+    padding: 4px;
+    border:none;
+  }
+
+.buttons{
+    background-color: rgb(0, 153, 153);
+    border-radius: 5px;
+    border: solid rgb(0, 153, 153) 2px;
+
+}
+.buttons:hover {
+    background-color: rgb(4, 123, 123);
+    border-color: rgb(4, 123, 123);
+}
