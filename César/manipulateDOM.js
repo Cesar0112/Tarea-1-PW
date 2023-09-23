@@ -1,21 +1,18 @@
-function validacionNombreApellido() {
-  validacionNombre();
-  validacionApellido();
-}
+function validarSoloTexto() {
+  const inputs = document.querySelectorAll('input[type="text"]');
 
-function validacionNombre() {
-  var input = document.getElementById("nombre"); //obtengo el valor del input
-  var regex = /^[a-zA-Z\sáéíóúñ]+$/;
-  if (!regex.test(input.value)) {
-    var nuevaCadena = input.value.replace(/[^a-zA-Z\sáéíóúñ]/g, "");
-    input.value = nuevaCadena;
-  }
+  inputs.forEach((input) => {
+    input.addEventListener("keypress", function (event) {
+      const charCode = event.charCode;
+      const regex = /[^a-zA-Z\sáéíóúñ]/gi;
+      const key = String.fromCharCode(charCode);
+
+      if (regex.test(key)) {
+        event.preventDefault();
+      }
+    });
+  });
 }
-function validacionApellido() {
-  var input = document.getElementById("apellidos"); //obtengo el valor del input
-  var regex = /^[a-zA-Z\sáéíóúñ]+$/;
-  if (!regex.test(input.value)) {
-    var nuevaCadena = input.value.replace(/[^a-zA-Z\sáéíóúñ]/g, "");
-    input.value = nuevaCadena;
-  }
-}
+document.addEventListener("DOMContentLoaded", function () {
+  validarSoloTexto();
+});
