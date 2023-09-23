@@ -12,3 +12,7 @@ Tarea número 1 de PW, es sencilla no hay nada complicado
 4. Haces el pull request
 ## Como se aprueba el pull request
 1. Yo lo apruebo 😂
+
+# Intenciones de este repositorio
+1. Sacar 5 en la tarea.
+2. Aprobechar de este repo y hacer el proyecto final.
